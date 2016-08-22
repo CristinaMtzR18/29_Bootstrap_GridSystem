@@ -14,7 +14,6 @@ header{
 header .row{
 	margin: 2% 0;
 }
-/**/
 header a, header i{
 	margin-top: 10px;
 }
@@ -46,7 +45,25 @@ article span:nth-child(2),.article a:nth-child(9),.article a:nth-child(10),.arti
 article h4{
 	margin: 5px 0;
 }
+	/*** Agenda ***/
+.calendario{
+	background-color: #929292;
+	margin-bottom: 2px;
+	width: 15%;
+	color: black;
+	font-weight: 600;
+}	
+.clear{
+	clear: both;
+}
+	/** ASIDE **/
+.magazine{
+	background-color: #E1DDDD;
+	margin-bottom: 3px;
+	padding: 2%; 
+}
 	/*** FOOTER ***/	
+
 footer h5{
 	font-weight: 600;
 }
@@ -64,12 +81,14 @@ footer .row{
 }
 					/*** UTILIDADES ***/
 /*Color de fondo*/
-.bg-gray{
+.bg-primary{
 	background-color: #929292;
-	padding: 3px 10px;
+	padding: 5px;
 	margin: 5px 0;
-	width: 60%;
-	color: white;
+	width: 50%;
+}
+.bg-gray{
+	background-color: #C4C0C0;
 }
 /*Encabezados*/
 h1,h2,h3,h4,h5{
@@ -95,4 +114,8 @@ h1,h2,h3,h4,h5{
 }
 .f-left{
 	float: left;
+}
+/*Lineas*/
+hr{
+	height: 2px;
 }

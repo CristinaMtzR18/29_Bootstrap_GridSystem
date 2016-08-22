@@ -1,3 +1,6 @@
+<!-- IMPORTANTE: Olvide uso de la Grid-System para subdivir mis tres columnas principales del contenido,
+      LECCIÓN APRENDIDA. Los elementos fueron más dificiles de manejar, no debo confiarme solo porque
+      el resultado visual se ve bueno-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -69,7 +72,7 @@
         <div class="col-sm-7 col-lg-5">  <!-- Inicia Primera Columna FOTOGRAFIA -->
           <!-- <article> especifica el contenido independiente, autónomo. (Referencia http://www.w3schools.com/tags/tag_article.asp) -->
           <article><!-- Articulo 1. Historia Destacada -->
-            <h4 class="bg-gray">Historia destacada</h4>
+            <h4 class="bg-primary text-center">Historia destacada</h4>
             <!-- Intituivamente uso <span> en lugar de <p> para un estilo diferente en el texto -->
             <span>Artículo</span>
             <span>Publicado el 09/10/15</span>
@@ -123,14 +126,13 @@
             <a href="#">lorem</a>
             <a href="#">lorem</a>
             <a href="#">lorem</a>
-            <hr>
           </article><!-- Termina Articulo 4 -->
         </div><!-- Termina Primera Columna -->
         <div class="col-sm-5 col-lg-4">  <!-- Inicia Segunda Columna. VIDEO -->
-          <h4 class="bg-gray">Historia Destacada</h4>
-          <article><!-- Inicia Articulo 1 -->
+          <article class="bg-gray"><!-- Inicia Articulo 1 -->
+            <h4 class="bg-primary text-center">Historia Destacada</h4>
             <iframe width="100%" height="250" src="https://www.youtube.com/embed/fVCNX23JrSU" frameborder="0" allowfullscreen></iframe>
-            <h4>Lorem ipsum dolor sit.</h4>
+            <h4>Claire Duppond</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo velit eos impedit asperiores tenetur ut repudiandae quaerat sit ducimus, est officia eius delectus, corrupti quae animi laborum quibusdam ipsa quasi.</p>
             <i class="glyphicon glyphicon-bookmark"></i>
             <a href="#">Ver más</a>
@@ -140,53 +142,53 @@
             <a href="#">lorem</a>
             <a href="#">lorem</a>
           </article><!-- Termina Articulo 1 -->
-          <div class="agenda"><!-- Inicia Agenda -->
-            <h4 class="bg-gray">Agenda</h4>
-            <div class="vista"><!-- Inicia Primer Dato -->
-              <div class="bg-w-25 f-left text-center">
+          <div><!-- Inicia Agenda -->
+            <h4 class="bg-primary text-center">Agenda</h4>
+            <div><!-- Inicia Primer Dato -->
+              <div class="calendario w-25 f-left text-center">
                 <p>23 <br>Enero</p>
               </div>
-              <div class="contenido w-75 f-right">
+              <div class="w-75 f-right">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 <span>Del 23 al 28 de Febrero</span>
               </div>
             </div><!-- Termina Primer Dato -->
-            <div class="vista"><!-- Inicia Segundo Dato -->
-              <div class="fecha w-25 f-left text-center">
+            <div><!-- Inicia Segundo Dato -->
+              <div class="calendario w-25 f-left text-center">
                 <p>23 <br>Enero</p>
               </div>
-              <div class="contenido w-75 f-right">
+              <div class="w-75 f-right">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 <span>Del 23 al 28 de Febrero</span>
               </div>
             </div><!-- Termina Segundo Dato -->
-            <div class="vista"><!-- Inicia Tercer Dato -->
-              <div class="fecha w-25 f-left">
+            <div><!-- Inicia Tercer Dato -->
+              <div class="calendario w-25 f-left text-center">
                 <p>23 <br>Enero</p>
               </div>
-              <div class="contenido w-75 f-right">
+              <div class="w-75 f-right">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 <span>Del 23 al 28 de Febrero</span>
               </div>
             </div><!-- Termina Tercer Dato -->
-            <div class="vista"><!-- Inicia Cuarto Dato -->
-              <div class="fecha w-25 f-left">
+            <div><!-- Inicia Cuarto Dato -->
+              <div class="calendario w-25 f-left text-center">
                 <p>23 <br>Enero</p>
               </div>
-              <div class="contenido w-75 f-right">
+              <div class="w-75 f-right">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                 <span>Del 23 al 28 de Febrero</span>
               </div>
             </div><!-- Termina Cuarto Dato -->
           </div><!-- Termina Agenda -->
-          <article><!-- Inicia Articulo 2 -->
+          <article class="clear"><!-- Inicia Articulo 2 -->
             <hr>
             <h3>Información</h3>
-            <a href="">Localidades</a>
+            <a href="#">Localidades</a>
             <h4>Lorem ipsum digit sit.</h4>
             <p>Lorem ipsum digital sit amet, consectetur adipisicing.</p>
             <a href="">Hospimedia</a>
@@ -194,18 +196,18 @@
             <p>Lorem ipsum digital sit amet, consectetur adipisicing.</p>
           </article><!-- Termina Ariculo 2 -->
         </div><!-- Termina Columna 2 -->
-        <div class="col-lg-3">  <!-- Inicia Tercera Columna. ASIDE -->
+        <div class="col-lg-3 visible-md visible-lg">  <!-- Inicia Tercera Columna. ASIDE -->
           <aside><!-- Inicia ASIDE -->
-            <div class="info"><!-- Inicia Mas Información -->
+            <div><!-- Inicia Mas Información -->
               <h3>Más Información</h3>
               <ul><!-- Opciones de búsqueda -->
-                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Finanzas y fiscalización</a></li>
-                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Investigación y equipos</a></li>
-                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Medio Ambiente</a></li>
-                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Habitat y Urbanismo</a></li>
-                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Sanidad</a></li>
-                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Social/Servicios</a></li>
-                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Transporte</a></li>         
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Finanzas y fiscalización</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Investigación y equipos</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Medio Ambiente</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Habitat y Urbanismo</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Sanidad</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Social/Servicios</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Transporte</a></li>         
                </ul>
             </div><!-- Termina Más Información -->
             <div class="magazine"><!-- Inicia MAGAZINE 1 -->
@@ -218,12 +220,15 @@
             </div><!-- Termina MAGAZINE 1 -->
             <div class="magazine"><!-- Inicia MAGAZINE 2 -->
               <h4>MAGAZINE</h4>
-              <h4>ECODEFI</h4>
+              <h4>ACCIONES COMUNES</h4>
               <h5>ENQUETE</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perspiciatis eaque, dolor culpa. Fugiat velit quae iste aliquid, temporibus illo.</p>
               <h5>PREGUNTAS</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             </div><!-- Termina MAGAZINE 2 -->
+            <div class="magazine"><!-- Inicia Nueva Generacion -->
+              <h4>Nueva Generación de la Internet</h4>
+            </div><!-- Termina Nueva Generacion -->
           </aside><!-- Termina ASIDE -->
         </div><!-- Termina Tercera Columna.-->
       </div><!-- Termina ROW -->
@@ -232,50 +237,50 @@
   <footer><!-- Inicia Footer -->
    <div class="container">
      <div class="row">
-       <div class="col-lg-3"><!-- Inicia Primer MiniMenu -->
+       <div class="col-xs-6 col-sm-3 col-lg-3"><!-- Inicia Primer MiniMenu -->
          <h5>Rubros</h5>
          <ul>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Actualidades</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">En Directo</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Reporte Financiero</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Nuestra Oferta</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">De nosotros a ustedes</a></li>       
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Actualidades</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> En Directo</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Reporte Financiero</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Nuestra Oferta</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> De nosotros a ustedes</a></li>       
          </ul>
        </div><!-- Termina Primer MiniMenu -->
        <div class="col-lg-2"><!-- Inicia Segundo MiniMenu -->
          <h5>Expertise</h5>
          <ul>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Finanzas y fiscalización</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Investigación y equipos</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Medio Ambiente</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Habitat y Urbanismo</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Sanidad</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Social/Servicios</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Transporte</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Finanzas y fiscalización</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Investigación y equipos</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Medio Ambiente</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Habitat y Urbanismo</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Sanidad</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Social/Servicios</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Transporte</a></li>
          </ul>
        </div><!-- Termina Segundo MiniMenu -->
-       <div class="col-lg-2"><!-- Inicia Tercer MiniMenu -->
+       <div class="col-xs-6 col-sm-3 col-lg-2"><!-- Inicia Tercer MiniMenu -->
          <h5>Suscripción</h5>
          <ul>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Todo el flujo</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Flujo RSS para expertos</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Noticias</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Todo el flujo</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Flujo RSS para expertos</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Noticias</a></li>
          </ul>
        </div><!-- Termina Tercer MiniMenu -->
-       <div class="col-lg-2"><!-- Inicia Cuarto MiniMenu -->
+       <div class="col-xs-6 col-sm-3 col-lg-2"><!-- Inicia Cuarto MiniMenu -->
          <h5>Nosotros</h5>
          <ul>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">¿Quiénes Somos?</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Plan de Sitio</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Información Legal</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> ¿Quiénes Somos?</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Plan de Sitio</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Información Legal</a></li>
          </ul>
        </div><!-- Termina Cuarto MiniMenu -->
-       <div class="col-lg-3"><!-- Inicia Quinto MiniMenu -->
+       <div class="col-xs-6 col-sm-3 col-lg-3"><!-- Inicia Quinto MiniMenu -->
          <h5>Contacto</h5>
           <ul>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Contáctanos</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">FAQ</a></li>
-           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Haga sus preguntas</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Contáctanos</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> FAQ</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="#"> Haga sus preguntas</a></li>
           </ul>
         </div><!-- Termina Quinto MiniMenu -->
       </div><!-- Finaliza ROW -->
