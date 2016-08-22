@@ -1,0 +1,98 @@
+		/* Inserta tu código aqui */
+		/*** GENERAL ***/
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+			/*** HEADER ***/
+header{
+	margin-top: 3%;
+}
+/*Modifico el margin de mi row del header*/
+header .row{
+	margin: 2% 0;
+}
+/**/
+header a, header i{
+	margin-top: 10px;
+}
+/*Aprendiendo a usar otro tipo de selector, solo quiero modificar al tercer hijo*/
+header i:nth-child(3){
+	padding-left: 21px;
+}
+		/*** BUSQUEDA ***/
+header input{
+	font-size: 1.4rem;
+	padding: 3px 5px;
+}
+header input{
+	padding-top: 4px;
+	height: 30px;
+	border-radius: 4px;
+}
+	/*** Barra de Navegacion***/
+nav>li>a {
+    padding: 10px 38px;
+}
+	/*** ARTICLE ***/
+article span,i,a,h4{
+	font-weight: 600;
+}
+article span:nth-child(2),.article a:nth-child(9),.article a:nth-child(10),.article a:nth-child(11){
+	font-weight: 400;
+}
+article h4{
+	margin: 5px 0;
+}
+	/*** FOOTER ***/	
+footer h5{
+	font-weight: 600;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.4rem;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+footer .row{
+	border-top: 5px solid #444444;
+}
+					/*** UTILIDADES ***/
+/*Color de fondo*/
+.bg-gray{
+	background-color: #929292;
+	padding: 3px 10px;
+	margin: 5px 0;
+	width: 60%;
+	color: white;
+}
+/*Encabezados*/
+h1,h2,h3,h4,h5{
+	padding: 0;
+	margin: 0;
+}
+/*Width*/
+.w-100{
+	width: 100%;
+}
+.w-75{
+	width: 75%;
+}
+.w-50{
+	width: 50%;
+}
+.w-25{
+	width: 25%;
+}
+/*Float*/
+.f-right{
+	float: right;
+}
+.f-left{
+	float: left;
+}

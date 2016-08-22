@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Hace que mi página sea compatible con Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  	<title>Bootstrap: Grid System</title>
+    <link rel="shortcut icon" href="image/ico/favicon.ico"> <!-- "shortcut icon" nos indicaque es tipo icono, relación -->
+  	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/main.css">
+      <!-- HTML5 Shim and Respond.js Agrega soporte para elementos HTML5 y media quieries en IE8 -->
+      <!-- ADVERTENCIA: Respond.js no soporta que ejecutes tu código via file:// -->
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->	
+  </head>
+  <body>
+  	<!-- Inserta tu código aqui -->
+    <header> <!-- Inicia mi HEADER -->
+      <div class="container"> <!-- Inicia CONTAINER -->
+        <div class="row"> <!-- Inicia Nombre de la página -->
+          <div class="col-xs-6 col-sm-8 col-lg-5">  <!-- Inicia Titulo de la página -->
+            <h1>Site Name</h1>
+          </div><!-- Termina Titulo de la página. -->
+          <div class="col-xs-6 col-sm-4 col-lg-3"> <!-- Mini menú para Noticias y Enlaces -->
+            <!-- Otra forma de incluir iconos sin el font-awesome.css con la etiqueta <i>, tambien puede ser con la etiqueta <span>. Bootstrap incluye 180 iconos creados mediante una fuente especial llamada Glyphicon (Referencia. http://librosweb.es/libro/bootstrap_3/capitulo_6/iconos_glyphicons.htm) -->
+            <i class="glyphicon glyphicon-home"></i>
+            <a href="">Noticias</a>
+            <i class="glyphicon glyphicon-home"></i>
+            <a href="">Enlaces RSS</a>
+          </div> <!-- Termina Mini menú -->
+          <div class="visible-md visible-lg col-lg-4"> <!-- Inicio Menú-Busqueda -->
+            <input type="search" value="Ingresa tu búsqueda">
+            <input type="submit" value="Buscar">
+          </div><!-- Termina mi Menú-busqueda -->
+        </div>
+        <div class="row"> <!-- Inicia Barra de Navegación -->
+          <nav class="navbar navbar-default" role="navigation"> <!-- Etiqueta <nav> -->
+            <div class="navbar-header">
+              <!-- <button> etiqueta que me ayuda a "dibujar" mi boton responsive de menú -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <!-- sr-only para marcar un contenido como oculto y que sólo esté disponible para los lectores (Referencia. http://librosweb.es/libro/bootstrap_3/capitulo_4/utilidades.html) -->
+                <span class="sr-only">Desplegar navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                <!-- "active" me permite saber donde estoy -->
+                <li class="active"><a href="#">Bienvenido</a></li>
+                <li><a href="#">Actualidades</a></li>
+                <li><a href="#">En directo</a></li>
+                <li><a href="#">Reporte Financiero</a></li>
+                <li><a href="#">Nuestra Oferta</a></li>
+                <li><a href="#">De Nosotros a Usted</a></li>
+              </ul>
+            </div>
+          </nav><!-- Cierra <nav> -->
+        </div><!-- Cierra Barra de Navegaciń -->
+      </div><!-- Cierra CONTAINER -->
+    </header> <!-- Termina HEADER -->
+  <section><!-- Inicia Cuerpo de la página -->
+    <div class="container"><!-- Inicia CONTAINER -->
+      <div class="row"><!-- Inicia ROW -->
+        <div class="col-sm-7 col-lg-5">  <!-- Inicia Primera Columna FOTOGRAFIA -->
+          <!-- <article> especifica el contenido independiente, autónomo. (Referencia http://www.w3schools.com/tags/tag_article.asp) -->
+          <article><!-- Articulo 1. Historia Destacada -->
+            <h4 class="bg-gray">Historia destacada</h4>
+            <!-- Intituivamente uso <span> en lugar de <p> para un estilo diferente en el texto -->
+            <span>Artículo</span>
+            <span>Publicado el 09/10/15</span>
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo velit eos impedit asperiores tenetur ut repudiandae quaerat sit ducimus, est officia eius delectus, corrupti quae animi laborum quibusdam ipsa quasi.</p>
+            <i class="glyphicon glyphicon-bookmark"></i>
+            <a href="#">Ver más</a>
+            <i class="glyphicon glyphicon-tag"></i>
+            <a href="#">Etiquetas:</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <hr>
+          </article><!-- Termina Articulo 1 -->
+          <article><!-- Inicia Articulo 2 -->
+            <span>Artículo</span>
+            <span>Publicado el 09/10/15</span>
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo velit eos impedit asperiores tenetur ut repudiandae quaerat sit ducimus, est officia eius delectus, corrupti quae animi laborum quibusdam ipsa quasi.</p>
+            <i class="glyphicon glyphicon-bookmark"></i>
+            <a href="#">Ver más</a>
+            <i class="glyphicon glyphicon-tag"></i>
+            <a href="#">Etiquetas:</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <hr>
+          </article><!-- Termina Articulo 2 -->
+          <article> <!-- Incio Articulo 3 -->
+            <span>Artículo</span>
+            <span>Publicado el 09/10/15</span>
+            <h4>Lorem ipsum dolor sit.</h4>
+            <img src="image/YKW2.jpg" alt="youkai-watch" class="img-responsive">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo velit eos impedit asperiores tenetur ut repudiandae quaerat sit ducimus, est officia eius delectus, corrupti quae animi laborum quibusdam ipsa quasi.</p>
+            <i class="glyphicon glyphicon-bookmark"></i>
+            <a href="#">Ver más</a>
+            <i class="glyphicon glyphicon-tag"></i>
+            <a href="#">Etiquetas:</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <hr>
+          </article><!-- Termina Articulo 3 -->
+          <article><!-- Inicia Artiuculo 4 -->
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo velit eos impedit asperiores tenetur ut repudiandae quaerat sit ducimus, est officia eius delectus, corrupti quae animi laborum quibusdam ipsa quasi.</p>
+            <i class="glyphicon glyphicon-bookmark"></i>
+            <a href="#">Ver más</a>
+            <i class="glyphicon glyphicon-tag"></i>
+            <a href="#">Etiquetas:</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <hr>
+          </article><!-- Termina Articulo 4 -->
+        </div><!-- Termina Primera Columna -->
+        <div class="col-sm-5 col-lg-4">  <!-- Inicia Segunda Columna. VIDEO -->
+          <h4 class="bg-gray">Historia Destacada</h4>
+          <article><!-- Inicia Articulo 1 -->
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/fVCNX23JrSU" frameborder="0" allowfullscreen></iframe>
+            <h4>Lorem ipsum dolor sit.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo velit eos impedit asperiores tenetur ut repudiandae quaerat sit ducimus, est officia eius delectus, corrupti quae animi laborum quibusdam ipsa quasi.</p>
+            <i class="glyphicon glyphicon-bookmark"></i>
+            <a href="#">Ver más</a>
+            <i class="glyphicon glyphicon-tag"></i>
+            <a href="#">Etiquetas:</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+            <a href="#">lorem</a>
+          </article><!-- Termina Articulo 1 -->
+          <div class="agenda"><!-- Inicia Agenda -->
+            <h4 class="bg-gray">Agenda</h4>
+            <div class="vista"><!-- Inicia Primer Dato -->
+              <div class="bg-w-25 f-left text-center">
+                <p>23 <br>Enero</p>
+              </div>
+              <div class="contenido w-75 f-right">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <span>Del 23 al 28 de Febrero</span>
+              </div>
+            </div><!-- Termina Primer Dato -->
+            <div class="vista"><!-- Inicia Segundo Dato -->
+              <div class="fecha w-25 f-left text-center">
+                <p>23 <br>Enero</p>
+              </div>
+              <div class="contenido w-75 f-right">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <span>Del 23 al 28 de Febrero</span>
+              </div>
+            </div><!-- Termina Segundo Dato -->
+            <div class="vista"><!-- Inicia Tercer Dato -->
+              <div class="fecha w-25 f-left">
+                <p>23 <br>Enero</p>
+              </div>
+              <div class="contenido w-75 f-right">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <span>Del 23 al 28 de Febrero</span>
+              </div>
+            </div><!-- Termina Tercer Dato -->
+            <div class="vista"><!-- Inicia Cuarto Dato -->
+              <div class="fecha w-25 f-left">
+                <p>23 <br>Enero</p>
+              </div>
+              <div class="contenido w-75 f-right">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <span>Del 23 al 28 de Febrero</span>
+              </div>
+            </div><!-- Termina Cuarto Dato -->
+          </div><!-- Termina Agenda -->
+          <article><!-- Inicia Articulo 2 -->
+            <hr>
+            <h3>Información</h3>
+            <a href="">Localidades</a>
+            <h4>Lorem ipsum digit sit.</h4>
+            <p>Lorem ipsum digital sit amet, consectetur adipisicing.</p>
+            <a href="">Hospimedia</a>
+            <h4>Lorem ipsum digit sit.</h4>
+            <p>Lorem ipsum digital sit amet, consectetur adipisicing.</p>
+          </article><!-- Termina Ariculo 2 -->
+        </div><!-- Termina Columna 2 -->
+        <div class="col-lg-3">  <!-- Inicia Tercera Columna. ASIDE -->
+          <aside><!-- Inicia ASIDE -->
+            <div class="info"><!-- Inicia Mas Información -->
+              <h3>Más Información</h3>
+              <ul><!-- Opciones de búsqueda -->
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Finanzas y fiscalización</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Investigación y equipos</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Medio Ambiente</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Habitat y Urbanismo</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Sanidad</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Social/Servicios</a></li>
+                 <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Transporte</a></li>         
+               </ul>
+            </div><!-- Termina Más Información -->
+            <div class="magazine"><!-- Inicia MAGAZINE 1 -->
+              <h4>MAGAZINE</h4>
+              <h4>ECODEFI</h4>
+              <h5>ENQUETE</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perspiciatis eaque, dolor culpa. Fugiat velit quae iste aliquid, temporibus illo.</p>
+              <h5>PREGUNTAS</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div><!-- Termina MAGAZINE 1 -->
+            <div class="magazine"><!-- Inicia MAGAZINE 2 -->
+              <h4>MAGAZINE</h4>
+              <h4>ECODEFI</h4>
+              <h5>ENQUETE</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perspiciatis eaque, dolor culpa. Fugiat velit quae iste aliquid, temporibus illo.</p>
+              <h5>PREGUNTAS</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div><!-- Termina MAGAZINE 2 -->
+          </aside><!-- Termina ASIDE -->
+        </div><!-- Termina Tercera Columna.-->
+      </div><!-- Termina ROW -->
+    </div><!-- Termina CONTAINER -->
+  </section>
+  <footer><!-- Inicia Footer -->
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-3"><!-- Inicia Primer MiniMenu -->
+         <h5>Rubros</h5>
+         <ul>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Actualidades</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">En Directo</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Reporte Financiero</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Nuestra Oferta</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">De nosotros a ustedes</a></li>       
+         </ul>
+       </div><!-- Termina Primer MiniMenu -->
+       <div class="col-lg-2"><!-- Inicia Segundo MiniMenu -->
+         <h5>Expertise</h5>
+         <ul>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Finanzas y fiscalización</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Investigación y equipos</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Medio Ambiente</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Habitat y Urbanismo</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Sanidad</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Social/Servicios</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Transporte</a></li>
+         </ul>
+       </div><!-- Termina Segundo MiniMenu -->
+       <div class="col-lg-2"><!-- Inicia Tercer MiniMenu -->
+         <h5>Suscripción</h5>
+         <ul>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Todo el flujo</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Flujo RSS para expertos</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Noticias</a></li>
+         </ul>
+       </div><!-- Termina Tercer MiniMenu -->
+       <div class="col-lg-2"><!-- Inicia Cuarto MiniMenu -->
+         <h5>Nosotros</h5>
+         <ul>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">¿Quiénes Somos?</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Plan de Sitio</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Información Legal</a></li>
+         </ul>
+       </div><!-- Termina Cuarto MiniMenu -->
+       <div class="col-lg-3"><!-- Inicia Quinto MiniMenu -->
+         <h5>Contacto</h5>
+          <ul>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Contáctanos</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">FAQ</a></li>
+           <li><i class="glyphicon glyphicon-bookmark"></i><a href="">Haga sus preguntas</a></li>
+          </ul>
+        </div><!-- Termina Quinto MiniMenu -->
+      </div><!-- Finaliza ROW -->
+    </div><!-- Finaliza CONTAINER -->
+  </footer>
+    	<!-- Incluir todos tus scripts apartir de este punto -->
+      <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
+      <script src="js/jquery-1.11.3.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
